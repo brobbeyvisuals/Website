@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Brobbey Visuals — fine-art portrait, editorial, and brand photography. Booking worldwide." />
+<title>Brobbey Visuals — Portrait & Editorial Photography</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__logo">Brobbey<span>Visuals</span></a>
+  <nav class="nav__links">
+    <a href="#top">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#packages">Packages</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="nav__cta">Enquire</a>
+  <button class="nav__burger" aria-label="Open menu" id="burger">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__media">
+    <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?auto=format&fit=crop&w=2400&q=80" alt="" />
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <p class="eyebrow">Est. 2018 · Worldwide</p>
+    <h1>Stories told<br/><em>through light.</em></h1>
+    <p class="hero__lede">Portrait, editorial, and brand photography by George Brobbey. Quietly cinematic, unmistakably human.</p>
+    <div class="hero__actions">
+      <a href="#work" class="btn btn--primary">View portfolio</a>
+      <a href="#contact" class="btn btn--ghost">Start a project</a>
+    </div>
+  </div>
+  <a href="#work" class="hero__scroll" aria-label="Scroll to work">
+    <span></span>
+  </a>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="work" id="portfolio">
+  <div class="section-head">
+    <p class="eyebrow">Selected work · 2022 — 2026</p>
+    <h2>A small archive of <em>quiet moments</em>.</h2>
+  </div>
+
+  <div class="filters" role="tablist">
+    <button class="filter is-active" data-filter="all" role="tab">All</button>
+    <button class="filter" data-filter="portrait" role="tab">Portrait</button>
+    <button class="filter" data-filter="editorial" role="tab">Editorial</button>
+    <button class="filter" data-filter="brand" role="tab">Brand</button>
+    <button class="filter" data-filter="travel" role="tab">Travel</button>
+  </div>
+
+  <div class="grid" id="grid">
+    <figure class="grid__item tall" data-cat="portrait" data-full="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=2000&q=85" data-title="Olivia, in studio" data-meta="Portrait · Brooklyn, 2025">
+      <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=900&q=80" alt="Portrait of a woman in soft window light" loading="lazy" />
+      <figcaption><span>Olivia, in studio</span><em>Portrait</em></figcaption>
+    </figure>
+    <figure class="grid__item" data-cat="editorial" data-full="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=2000&q=85" data-title="Threads of Spring" data-meta="Editorial · Milan, 2024">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Editorial fashion photograph" loading="lazy" />
+      <figcaption><span>Threads of Spring</span><em>Editorial</em></figcaption>
+    </figure>
+    <figure class="grid__item" data-cat="brand" data-full="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=2000&q=85" data-title="Aesop · Object study" data-meta="Brand · 2025">
+      <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=900&q=80" alt="Still life of skincare bottle" loading="lazy" />
+      <figcaption><span>Aesop · Object study</span><em>Brand</em></figcaption>
+    </figure>
+    <figure class="grid__item tall" data-cat="travel" data-full="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2000&q=85" data-title="Atlas, at dusk" data-meta="Travel · Morocco, 2023">
+      <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&q=80" alt="Mountain landscape at dusk" loading="lazy" />
+      <figcaption><span>Atlas, at dusk</span><em>Travel</em></figcaption>
+    </figure>
+    <figure class="grid__item wide" data-cat="editorial" data-full="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=2400&q=85" data-title="Quiet Hours" data-meta="Editorial · Tokyo, 2024">
+      <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=1400&q=80" alt="Editorial scene" loading="lazy" />
+      <figcaption><span>Quiet Hours</span><em>Editorial</em></figcaption>
+    </figure>
+    <figure class="grid__item" data-cat="portrait" data-full="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=2000&q=85" data-title="A study of stillness" data-meta="Portrait · 2025">
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80" alt="Portrait of a man in monochrome" loading="lazy" />
+      <figcaption><span>A study of stillness</span><em>Portrait</em></figcaption>
+    </figure>
+    <figure class="grid__item" data-cat="brand" data-full="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=2000&q=85" data-title="Nike · Movement" data-meta="Brand · 2024">
+      <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80" alt="Athletic motion brand photo" loading="lazy" />
+      <figcaption><span>Nike · Movement</span><em>Brand</em></figcaption>
+    </figure>
+    <figure class="grid__item tall" data-cat="travel" data-full="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?auto=format&fit=crop&w=2000&q=85" data-title="Salt of the North" data-meta="Travel · Iceland, 2023">
+      <img src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?auto=format&fit=crop&w=900&q=80" alt="Northern coastline" loading="lazy" />
+      <figcaption><span>Salt of the North</span><em>Travel</em></figcaption>
+    </figure>
+    <figure class="grid__item" data-cat="portrait" data-full="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=2000&q=85" data-title="Marcus" data-meta="Portrait · NYC, 2025">
+      <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=900&q=80" alt="Portrait of a man" loading="lazy" />
+      <figcaption><span>Marcus</span><em>Portrait</em></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about__media">
+    <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=1600&q=80" alt="George Brobbey behind the camera" />
+  </div>
+  <div class="about__copy">
+    <p class="eyebrow">About</p>
+    <h2>I make photographs the way other people <em>write letters</em>.</h2>
+    <p>I'm George Brobbey — a photographer based between New York and Accra. I work with people, brands, and publications who care about restraint, quiet, and detail. My pictures lean toward natural light, deliberate composition, and the small gestures most people miss.</p>
+    <p>Past collaborators include Aesop, Nike, Vogue Italia, The New York Times Magazine, Spotify, and a handful of independent labels and galleries.</p>
+    <ul class="about__stats">
+      <li><strong>120+</strong><span>commissioned editorials</span></li>
+      <li><strong>40+</strong><span>brand collaborations</span></li>
+      <li><strong>3</strong><span>solo exhibitions</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="packages" id="packages">
+  <div class="section-head">
+    <p class="eyebrow">Packages</p>
+    <h2>Wedding photography, <em>thoughtfully scaled</em>.</h2>
+    <p class="section-lede">Three considered collections to suit the shape of your day. Every package includes a pre-wedding consultation, fully edited images, and private online gallery delivery.</p>
+  </div>
+
+  <div class="packages__grid">
+    <article class="package">
+      <div class="package__head">
+        <p class="package__tier">Essential</p>
+        <p class="package__price"><span>£</span>750</p>
+      </div>
+      <p class="package__lede">A focused offering for couples whose celebration centres on the ceremony and reception.</p>
+      <ul class="package__list">
+        <li><strong>5 hours</strong> of continuous event coverage</li>
+        <li><strong>100</strong> carefully edited photographs</li>
+        <li>Coverage of the wedding ceremony &amp; reception</li>
+        <li>Private online gallery delivery</li>
+        <li>Pre-wedding consultation</li>
+      </ul>
+      <a href="#contact" class="btn btn--ghost btn--block">Enquire</a>
+    </article>
+
+    <article class="package package--featured">
+      <span class="package__badge">Most popular</span>
+      <div class="package__head">
+        <p class="package__tier">Signature</p>
+        <p class="package__price"><span>£</span>1,100</p>
+      </div>
+      <p class="package__lede">Our most chosen collection — the day captured in full, from the quiet moments of preparation onwards.</p>
+      <ul class="package__list">
+        <li><strong>7 hours</strong> of continuous event coverage</li>
+        <li><strong>200</strong> carefully edited photographs</li>
+        <li>Coverage of bridal preparation, ceremony &amp; reception</li>
+        <li>Private online gallery delivery</li>
+        <li>Pre-wedding consultation &amp; planning call</li>
+      </ul>
+      <a href="#contact" class="btn btn--primary btn--block">Enquire</a>
+    </article>
+
+    <article class="package">
+      <div class="package__head">
+        <p class="package__tier">Elite</p>
+        <p class="package__price"><span>£</span>1,600</p>
+      </div>
+      <p class="package__lede">Comprehensive full-day coverage from the first light of morning preparations to the final dance.</p>
+      <ul class="package__list">
+        <li><strong>Full-day</strong> event coverage</li>
+        <li><strong>300</strong> carefully edited photographs</li>
+        <li>Coverage of bridal &amp; groom preparation, ceremony &amp; reception</li>
+        <li>Private online gallery delivery</li>
+        <li>Pre-wedding consultation &amp; planning call</li>
+      </ul>
+      <a href="#contact" class="btn btn--ghost btn--block">Enquire</a>
+    </article>
+  </div>
+
+  <p class="packages__note">Bespoke arrangements, second-shooter additions, and pre-wedding shoots available on request.</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact__inner">
+    <p class="eyebrow">Contact</p>
+    <h2>Tell me about <em>your project.</em></h2>
+    <p class="contact__lede">I take on a small number of commissions each season. Share a few details below and I'll get back to you within 48 hours.</p>
+
+    <form class="form" id="form" novalidate>
+      <div class="row">
+        <label>Name<input type="text" name="name" required /></label>
+        <label>Email<input type="email" name="email" required /></label>
+      </div>
+      <div class="row">
+        <label>Project type
+          <select name="type">
+            <option>Portrait</option>
+            <option>Editorial</option>
+            <option>Brand / Campaign</option>
+            <option>Wedding / Event</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Approximate budget
+          <select name="budget">
+            <option>Under $2k</option>
+            <option>$2k – $5k</option>
+            <option>$5k – $15k</option>
+            <option>$15k+</option>
+          </select>
+        </label>
+      </div>
+      <label>Tell me about it<textarea name="message" rows="5" placeholder="Where, when, who, and what you're hoping for…"></textarea></label>
+      <button type="submit" class="btn btn--primary btn--lg">Send inquiry</button>
+      <p class="form__note" id="formNote" hidden>Thank you — your note has landed. I'll be in touch within 48 hours.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div>
+      <p class="footer__logo">Brobbey<span>Visuals</span></p>
+      <p class="footer__tag">Photographs that take their time.</p>
+    </div>
+    <div class="footer__cols">
+      <div>
+        <p class="footer__h">Studio</p>
+        <p>New York · Accra</p>
+        <p>hello@brobbeyvisuals.com</p>
+      </div>
+      <div>
+        <p class="footer__h">Elsewhere</p>
+        <p><a href="#">Instagram</a></p>
+        <p><a href="#">Are.na</a></p>
+        <p><a href="#">Newsletter</a></p>
+      </div>
+      <div>
+        <p class="footer__h">Index</p>
+        <p><a href="#about">About</a></p>
+        <p><a href="#portfolio">Portfolio</a></p>
+        <p><a href="#packages">Packages</a></p>
+        <p><a href="#contact">Contact</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer__base">
+    <span>© 2026 Brobbey Visuals. All images are licensed and protected.</span>
+    <span>Site by the studio.</span>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" aria-label="Close">×</button>
+  <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous">‹</button>
+  <button class="lightbox__nav lightbox__nav--next" aria-label="Next">›</button>
+  <figure>
+    <img id="lbImg" alt="" />
+    <figcaption><span id="lbTitle"></span><em id="lbMeta"></em></figcaption>
+  </figure>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
