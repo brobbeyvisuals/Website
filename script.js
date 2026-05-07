@@ -26,6 +26,17 @@ filters.forEach(btn => {
   });
 });
 
+/* ---------- Packages tabs ---------- */
+const pkgTabs = document.querySelectorAll('.packages__tab');
+const pkgPanels = document.querySelectorAll('.packages__panel');
+pkgTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = tab.dataset.pkgTab;
+    pkgTabs.forEach(t => t.classList.toggle('is-active', t === tab));
+    pkgPanels.forEach(p => p.classList.toggle('is-active', p.dataset.pkgPanel === target));
+  });
+});
+
 /* ---------- Lightbox ---------- */
 const lb = document.getElementById('lightbox');
 const lbImg = document.getElementById('lbImg');
@@ -94,8 +105,36 @@ revealTargets.forEach(el => io.observe(el));
 /* ---------- Form ---------- */
 const form = document.getElementById('form');
 const formNote = document.getElementById('formNote');
-form.addEventListener('submit', (e) => {
+const formBtn = form.querySelector('button[type="submit"]');
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  formNote.hidden = false;
-  form.reset();
+  if (!form.action || !form.action.includes('formsubmit')) {
+    formNote.hidden = false;
+    form.reset();
+    return;
+  }
+  const originalLabel = formBtn.textContent;
+  formBtn.textContent = 'Sending…';
+  formBtn.disabled = true;
+  try {
+    const data = Object.fromEntries(new FormData(form).entries());
+    const res = await fetch(form.action, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    if (res.ok) {
+      formNote.hidden = false;
+      form.reset();
+    } else {
+      formNote.hidden = false;
+      formNote.textContent = "Couldn't send right now — please email brobbeyvisuals@gmail.com directly.";
+    }
+  } catch (err) {
+    formNote.hidden = false;
+    formNote.textContent = "Couldn't send right now — please email brobbeyvisuals@gmail.com directly.";
+  } finally {
+    formBtn.textContent = originalLabel;
+    formBtn.disabled = false;
+  }
 });
