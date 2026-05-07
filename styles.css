@@ -7,7 +7,7 @@
   --line: rgba(244, 241, 236, 0.12);
   --accent: #d8c5a4;
   --accent-2: #b89a6a;
-  --serif: 'Cormorant Garamond', 'Times New Roman', serif;
+  --serif: 'Bodoni Moda', 'Times New Roman', serif;
   --sans: 'Inter', system-ui, -apple-system, sans-serif;
   --max: 1400px;
   --pad: clamp(20px, 4vw, 80px);
