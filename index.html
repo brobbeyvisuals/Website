@@ -515,6 +515,18 @@
         <label>Email<input type="email" name="email" required /></label>
       </div>
       <div class="row">
+        <label>Phone<input type="tel" name="phone" placeholder="(optional)" autocomplete="tel" /></label>
+        <div class="form-toggle">
+          <span class="form-toggle__label">Preferred contact</span>
+          <div class="form-toggle__pills" role="radiogroup" aria-label="Preferred contact method">
+            <input type="radio" id="pref-email" name="preferred" value="Email" checked />
+            <label for="pref-email" class="form-toggle__pill">Email</label>
+            <input type="radio" id="pref-phone" name="preferred" value="Phone" />
+            <label for="pref-phone" class="form-toggle__pill">Phone</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
         <label>Project type
           <select name="type">
             <option>Wedding Photography</option>
