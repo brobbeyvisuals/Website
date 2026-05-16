@@ -150,6 +150,28 @@ em { font-style: italic; color: var(--accent); }
 .nav__cta:hover { background: var(--nav-fg); color: var(--nav-fg-contrast); border-color: var(--nav-fg); }
 .nav__burger { display: none; flex-direction: column; gap: 5px; padding: 0.5rem; }
 .nav__burger span { display: block; width: 24px; height: 1px; background: var(--nav-fg); transition: 0.3s; }
+.nav__actions { display: flex; align-items: center; gap: 1rem; }
+.theme-toggle {
+  flex-shrink: 0;
+  width: 40px; height: 40px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--nav-line);
+  border-radius: 50%;
+  color: var(--nav-fg);
+  transition: border-color 0.35s ease, color 0.35s ease, transform 0.4s cubic-bezier(.2,.7,.2,1);
+}
+.theme-toggle:hover { border-color: var(--nav-fg); transform: rotate(35deg); }
+.theme-toggle__icon {
+  width: 17px; height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.theme-toggle__sun { display: none; }
+:root[data-theme="light"] .theme-toggle__sun { display: block; }
+:root[data-theme="light"] .theme-toggle__moon { display: none; }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -338,6 +360,7 @@ em { font-style: italic; color: var(--accent); }
   background: var(--bg-2);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+  transition: background-color 0.4s ease, border-color 0.4s ease;
 }
 .packages .section-head { padding-top: clamp(80px, 12vh, 140px); }
 .section-lede {
@@ -393,7 +416,7 @@ em { font-style: italic; color: var(--accent); }
   background: var(--bg);
   border: 1px solid var(--line);
   padding: clamp(32px, 3.4vw, 52px);
-  transition: transform 0.5s cubic-bezier(.2,.7,.2,1), border-color 0.4s ease;
+  transition: transform 0.5s cubic-bezier(.2,.7,.2,1), border-color 0.4s ease, background-color 0.4s ease;
 }
 .package:hover { transform: translateY(-6px); border-color: var(--accent-line); }
 .package--featured {
@@ -559,6 +582,7 @@ em { font-style: italic; color: var(--accent); }
   background: var(--bg-2);
   border-top: 1px solid var(--line);
   padding: clamp(80px, 12vh, 140px) var(--pad);
+  transition: background-color 0.4s ease, border-color 0.4s ease;
 }
 .contact__inner { max-width: 880px; margin: 0 auto; }
 .contact__inner .eyebrow { margin-bottom: 1.4rem; }

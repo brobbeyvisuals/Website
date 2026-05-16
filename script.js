@@ -4,6 +4,15 @@ const onScroll = () => nav.classList.toggle('is-stuck', window.scrollY > 40);
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
+/* ---------- Theme toggle ---------- */
+const themeToggle = document.getElementById('themeToggle');
+themeToggle.addEventListener('click', () => {
+  const current = document.documentElement.getAttribute('data-theme');
+  const next = current === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', next);
+  try { localStorage.setItem('bv-theme', next); } catch (e) {}
+});
+
 /* ---------- Mobile menu ---------- */
 const burger = document.getElementById('burger');
 burger.addEventListener('click', () => nav.classList.toggle('is-open'));
